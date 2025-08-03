@@ -1,0 +1,118 @@
+/* styles.css */
+@font-face {
+  font-family: 'Antiqua Shaded Medium';
+  src: url('./fonts/AntiquaShadedW00Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: white;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #c8102e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+  background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%),
+    url('banner-logo.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo-banner {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.7));
+}
+
+.banner h2 {
+  font-family: 'Antiqua Shaded Medium', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 0.5px black; 
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+/* SEÇÃO SOBRE */
+.sobre {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 50px;
+  gap: 30px;
+}
+
+/* Texto */
+.texto {
+  flex: 1 1 450px;
+  max-width: 600px;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.texto h3 {
+  font-size: 1.4em;
+  color: #c8102e;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.texto span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.texto p {
+  line-height: 1.7;
+  color: #000;
+}
+
+/* Personagem */
+.personagem img {
+  max-width: 300px;
+  height: auto;
+  align-self: flex-start;
+}
